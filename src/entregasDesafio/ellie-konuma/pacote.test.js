@@ -1,4 +1,3 @@
-// const { describe } = require('node:test')
 const { calcularPacote } = require("../../dominio/calculadora/Projeto/pacote");
 
 describe("Calcular pacote de acordo com cada projeto", () => {

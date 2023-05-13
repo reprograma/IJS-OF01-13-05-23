@@ -1,14 +1,11 @@
-// const { describe } = require("node:test")
+const {
+  calcularHorasDeProjeto,
+} = require("../../dominio/calculadora/Projeto/horasPorProjeto");
 
-const {calcularHorasDeProjeto} = require("../../dominio/calculadora/Projeto/horasPorProjeto")
-
-describe('Cálculo de horas totoais para finalizar um projeto', () => {
-
-  test('Dado um arry com as funcionalidades desejadas no projeto, retorna a soma das horas nescessarias',() =>{
-    const funcionalidades = [
-      'setup','responsividade'
-    ]
+describe("Cálculo de horas totoais para finalizar um projeto", () => {
+  test("Dado um arry com as funcionalidades desejadas no projeto, retorna a soma das horas nescessarias", () => {
+    const funcionalidades = ["setup", "responsividade"];
     const result = calcularHorasDeProjeto(funcionalidades);
-    expect(result).toEqual(24)
-  })
-})
+    expect(result).toEqual(24);
+  });
+});

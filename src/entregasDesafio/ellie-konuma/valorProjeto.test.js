@@ -2,7 +2,6 @@ const {
   calcularValorTotalProjeto,
 } = require("../../dominio/calculadora/Projeto/valorProjeto");
 const pacote = require("../../dominio/calculadora/Projeto/pacote");
-// const { describe, beforeEach } = require("node:test");
 
 jest.mock("../../dominio/calculadora/Projeto/pacote.js");
 
