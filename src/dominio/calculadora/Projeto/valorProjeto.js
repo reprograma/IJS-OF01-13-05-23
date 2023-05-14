@@ -1,6 +1,6 @@
 const { TAXAS_CONTRATUAIS_POR_PACOTE } = require('../constantes/constantes')
 const { calcularHorasDeProjeto } = require('./horasPorProjeto');
-const { calcularPacote } = require('./pacote');
+const { calcularPacote } = require('../Projeto/pacote');
 
 const calcularValorBaseProjeto = (totalDeHorasPorProjeto, valorHora) => {
   return totalDeHorasPorProjeto * valorHora;
