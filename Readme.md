@@ -75,3 +75,5 @@ Após a instalação do NVM para realizar a alteração da versão atual do node
 `nvm use v14.15.0`
 
 **A vantagem de utilizar o NVM é a possibilidade ter várias versões do node instaladas na sua máquina e alternar facilmente entre elas sempre que necessário.**
+
+# Testando o bug
