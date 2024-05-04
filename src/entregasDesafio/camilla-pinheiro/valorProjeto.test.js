@@ -10,18 +10,18 @@ describe('Valor do projeto', () => {
     })
     test('retorna o valor da hora do programador por funcionalidade solicitada', () => {
       const funcionalidades = [
-          'setup',
-          'formulario',
-          'responsividade',
-          'construcao_1_pagina',
-          'construcao_1_pagina',
-          'construcao_1_pagina',
-          'ssr',
-          'integracao_api_propria'
+          'setup', //8*72
+          'formulario', //16*72
+          'responsividade', //16*72
+          'construcao_1_pagina', //8*72
+          'construcao_1_pagina', //8*72
+          'construcao_1_pagina', //8*72
+          'ssr', //8*72
+          'integracao_api_propria' //16*72
       ]
-  
+
       const valorHora = 72;
-      const result = calcularValorTotalProjeto(funcionalidades, valorHora);
+      const result = calcularValorTotalProjeto(funcionalidades, valorHora); //6336*1.1 (taxa contratual do pacote_basico é igual a 10%)
       expect(result).toEqual(6970)
     })
 })
