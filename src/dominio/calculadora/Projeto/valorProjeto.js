@@ -16,4 +16,5 @@ const calcularValorTotalProjeto = (funcionalidades, valorHora) => {
   return Math.round(valorBase * TAXAS_CONTRATUAIS_POR_PACOTE[pacote]);
 }
 
+// 'formulario', 'responsividade', 'otimizacao_seo', 'construcao_1_pagina', 'integracao_mailchimp', 'ssr', 'integracao_api_propria'
 exports.calcularValorTotalProjeto = calcularValorTotalProjeto;
