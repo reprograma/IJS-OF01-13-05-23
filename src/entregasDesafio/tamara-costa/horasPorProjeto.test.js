@@ -13,9 +13,7 @@ describe('Cálculo de horas totais para finalizar um projeto', () => {
         'ssr'
       ]
   
-      const result = calcularHorasDeProjeto(funcionalidades);
-
-      console.log(result)
+      const result = calcularHorasDeProjeto(funcionalidades);    
       
       expect(result).toEqual(72);
 
