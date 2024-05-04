@@ -1,3 +1,5 @@
+const calcularPacote = require('../Projeto/pacote')
+
 const DIAS_UTEIS_NO_MES = 22;
 const HORAS_POR_DIA = 8;
 
@@ -29,5 +31,6 @@ module.exports = {
   HORAS_POR_DIA,
   HORAS_POR_FUNCIONALIDADE,
   MAX_HORAS_POR_PACOTE,
-  TAXAS_CONTRATUAIS_POR_PACOTE
+  TAXAS_CONTRATUAIS_POR_PACOTE,
+  calcularPacote
 }
