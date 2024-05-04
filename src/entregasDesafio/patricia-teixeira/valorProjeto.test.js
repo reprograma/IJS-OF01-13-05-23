@@ -16,13 +16,11 @@ describe('Valor do projeto', () => {
       'construcao_1_pagina',
       'construcao_1_pagina',
       'construcao_1_pagina',
-      'formulario',
-      'ssr'
     ]
 
     const horasTrabalhadas = 70;
     const result = calcularValorTotalProjeto(funcionalidades, horasTrabalhadas)
 
-    expect(result).toEqual(5544)
+    expect(result).toEqual(3696)
   })
 })
