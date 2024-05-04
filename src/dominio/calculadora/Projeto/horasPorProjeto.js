@@ -6,5 +6,4 @@ const calcularHorasDeProjeto = (listaDeFuncionalidades) => (
     .reduce((sum, currentValue) => sum + currentValue, 0)
 );
 
-console.log(calcularHorasDeProjeto(['setup', 'formulario', 'responsividade', 'otimizacao_seo', 'construcao_1_pagina', 'integracao_mailchimp', 'ssr', 'integracao_api_propria']));
 exports.calcularHorasDeProjeto = calcularHorasDeProjeto;

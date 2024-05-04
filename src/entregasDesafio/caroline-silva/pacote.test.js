@@ -1,6 +1,6 @@
 const { calcularPacote } = require("../../dominio/calculadora/Projeto/pacote");
 
-describe('Testa a função pacote', () => {
+describe('Calcular pacote correto para cada projeto', () => {
   test('Testa se a função pacote é definida', () => {
     expect(calcularPacote).toBeDefined();
   });
