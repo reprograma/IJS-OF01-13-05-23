@@ -5,22 +5,24 @@ const pacote = require('../../dominio/calculadora/Projeto/pacote')
 jest.mock('../../dominio/calculadora/Projeto/pacote.js')
 
 describe('Valor do projeto', () => {
-    beforeEach(() => {
-      pacote.calcularPacote.mockReturnValue('pacote_basico')
-    })
+  beforeEach(() => {
+    pacote.calcularPacote.mockReturnValue('pacote_basico')
+  })
 
-    test('retorna valor total para um projeto dadas as funcionalidades por projeto pedidas e o valor da hora da desenvolvedora', () => {
-      const funcionalidades = [
-          'setup',
-          'responsividade',
-          'construcao_1_pagina',
-          'construcao_1_pagina',
-          'construcao_1_pagina'
-      ]
-  
-      const valorHora = 70;
-      const result = calcularValorTotalProjeto(funcionalidades, valorHora)
+  test('Retorna o valor total de um projeto dada as funcionalidades por projeto pedidas e o valor da hora da desenvolvedora', () => {
+    const funcionalidades = [
+      'setup',
+      'responsividade',
+      'construcao_1_pagina',
+      'construcao_1_pagina',
+      'construcao_1_pagina',
+      'formulario',
+      'ssr'
+    ]
 
-      expect(result).toEqual(3696)
-    })
+    const horasTrabalhadas = 70;
+    const result = calcularValorTotalProjeto(funcionalidades, horasTrabalhadas)
+
+    expect(result).toEqual(5544)
+  })
 })
