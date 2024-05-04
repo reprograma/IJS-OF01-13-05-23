@@ -35,3 +35,4 @@ describe('Calcular pacote correto para cada projeto', () => {
     expect(calcularPacote(199)).toBe('pacote_premium');
   });
 });
+
