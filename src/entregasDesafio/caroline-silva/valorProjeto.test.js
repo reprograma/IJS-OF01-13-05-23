@@ -34,7 +34,7 @@ describe('Testa a função calcularValorTotalProjeto', () => {
   test('Se ao passar responsividade e o número 1 retorna 18', () => {
     expect(calcularValorTotalProjeto(['responsividade'], 1)).toBe(18);
   });
-  test('Se ao passar responsividade e o número 15 retorna 100', () => {
+  test('Se ao passar responsividade e o número 15 retorna 264', () => {
     expect(calcularValorTotalProjeto(['responsividade'], 15)).toBe(264);
   });
 });
